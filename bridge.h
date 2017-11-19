@@ -10,7 +10,7 @@
 #define bridge_h
 
 #import "Photo Search Example/AFNetworking/AFNetworking.h"
-#import "UIKit+AFNetworking/UIKit+AFNetworking.h"
+#import "Photo Search Example/UIKit+AFNetworking/UIKit+AFNetworking.h"
 
 
 #endif /* bridge_h */

@@ -19,15 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-7I-bkL">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                             </scrollView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="l5W-2o-iUH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WBe-gJ-uUx"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5wc-7I-bkL" secondAttribute="trailing" id="AEi-h3-gVd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5wc-7I-bkL" secondAttribute="bottom" id="D3L-BQ-mQL"/>
-                            <constraint firstItem="5wc-7I-bkL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vcj-A2-tMs"/>
-                            <constraint firstItem="5wc-7I-bkL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gja-LS-sBK"/>
+                            <constraint firstItem="5wc-7I-bkL" firstAttribute="top" secondItem="l5W-2o-iUH" secondAttribute="bottom" id="Cmz-17-5Gh"/>
+                            <constraint firstItem="5wc-7I-bkL" firstAttribute="trailing" secondItem="l5W-2o-iUH" secondAttribute="trailing" id="JeN-f4-z5V"/>
+                            <constraint firstItem="l5W-2o-iUH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cxp-0U-6lM"/>
+                            <constraint firstItem="5wc-7I-bkL" firstAttribute="leading" secondItem="l5W-2o-iUH" secondAttribute="leading" id="iaA-vK-pXg"/>
+                            <constraint firstItem="l5W-2o-iUH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pNE-Bz-S2F"/>
+                            <constraint firstItem="5wc-7I-bkL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uHU-e8-xtE"/>
+                            <constraint firstItem="l5W-2o-iUH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zGD-KL-ygO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
